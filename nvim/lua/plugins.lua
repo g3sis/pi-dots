@@ -7,7 +7,9 @@ return require('packer').startup(function()
   use 'lervag/vimtex'
 
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
-  use 'L3MON4D3/LuaSnip' -- Snippets plugin
+  use 'L3MON4D3/LuaSnip' -- Snippets plugins
+
+  use { "mfussenegger/nvim-jdtls", ft = { "java" }}
 
   use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
        require("toggleterm").setup()
