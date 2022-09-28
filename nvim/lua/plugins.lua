@@ -4,6 +4,8 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+
   use 'lervag/vimtex'
 
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
@@ -47,5 +49,19 @@ return require('packer').startup(function()
     }
 
     use "steelsojka/pears.nvim"
+
+    use "kyazdani42/nvim-web-devicons"
+
+    vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
+
+    use {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = { 
+      "nvim-lua/plenary.nvim",
+      "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  }
 
 end)

@@ -2,11 +2,20 @@ vim.cmd("set number")
 vim.cmd("set mouse=a")
 require('plugins')
 
+vim.cmd([[nnoremap \ :Neotree toggle position=float<cr>]])
+
+vim.cmd([[nnoremap > :bnext<cr>]])
+vim.cmd([[nnoremap < :bprevious<cr>]])
+vim.cmd([[nnoremap <c-w> :bd<cr>]])
+
+
 require('toggleterm').setup{
 size = 20,
 open_mapping = [[<c-t>]],
 direction = "float"
 }
+
+require("bufferline").setup{}
 
 require "pears".setup()
 
