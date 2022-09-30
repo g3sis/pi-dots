@@ -8,6 +8,10 @@ return require('packer').startup(function()
 
   use 'lervag/vimtex'
 
+  use 'stevearc/dressing.nvim' 
+
+  use "lukas-reineke/lsp-format.nvim"
+
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Snippets plugins
 
@@ -16,6 +20,18 @@ return require('packer').startup(function()
   use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
        require("toggleterm").setup()
        end}
+
+  use {
+  "folke/trouble.nvim",
+  requires = "kyazdani42/nvim-web-devicons",
+  config = function()
+    require("trouble").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+  }
 
   use {
   'nvim-lualine/lualine.nvim',
