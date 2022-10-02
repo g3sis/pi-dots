@@ -10,7 +10,6 @@ vim.cmd([[nnoremap <c-w> :bd<cr>]])
 
 vim.cmd([[nnoremap <c-p> :PackerSync<cr>]])
 
-
 vim.cmd([[nnoremap " :TroubleToggle<cr>]])
 
 require('toggleterm').setup{
@@ -276,7 +275,13 @@ ins_right {
 lualine.setup(config)
 
 require("lsp-format").setup {}
-require("lspconfig").gopls.setup { on_attach = require("lsp-format").on_attach }
+
+local on_attach = function(client)
+    require("lsp-format").on_attach(client)
+
+    -- ... custom code ...
+end
+require("lspconfig").gopls.setup { on_attach = on_attach }
 
 require("nvim-lsp-installer").setup {}
 
