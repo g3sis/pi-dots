@@ -10,6 +10,14 @@ return require('packer').startup(function()
 
   use 'stevearc/dressing.nvim' 
 
+  use {
+    "numToStr/Comment.nvim",
+    event = "BufRead",
+    config = function()
+      require("config.Comment").setup()
+    end,
+  }
+
   use "lukas-reineke/lsp-format.nvim"
 
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
