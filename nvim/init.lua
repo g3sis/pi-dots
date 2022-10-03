@@ -4,7 +4,7 @@ require('plugins')
 --Start Page
 vim.cmd([[nnoremap <c-\> :Alpha<cr>]])
 --File explorer
-vim.cmd([[nnoremap \ :Neotree toggle position=float<cr>]])
+vim.cmd([[nnoremap \ :Neotree toggle position=right<cr>]])
 --Buffer management
 vim.cmd([[nnoremap > :bnext<cr>]])
 vim.cmd([[nnoremap < :bprevious<cr>]])
@@ -12,13 +12,15 @@ vim.cmd([[nnoremap <c-w> :bd<cr>]])
 --To sync and update my plugins
 vim.cmd([[nnoremap <c-p> :PackerSync<cr>]])
 --Trouble to show warnings, errors, etc.
-vim.cmd([[nnoremap ; :TroubleToggle<cr>]])
+vim.cmd([[nnoremap " :TroubleToggle<cr>]])
 --Terminal
 require('toggleterm').setup{
 size = 20,
 open_mapping = [[<c-t>]],
 direction = "float"
 }
+
+require('Comment').setup()
 
 require("bufferline").setup{}
 --Pears for pairs of brackets

@@ -8,15 +8,14 @@ return require('packer').startup(function()
 
   use 'lervag/vimtex'
 
-  use 'stevearc/dressing.nvim' 
-
   use {
-    "numToStr/Comment.nvim",
-    event = "BufRead",
-    config = function()
-      require("config.Comment").setup()
-    end,
-  }
+        'nvim-treesitter/nvim-treesitter',
+        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    }
+
+  use 'stevearc/dressing.nvim'
+
+  use "numToStr/Comment.nvim"
 
   use "lukas-reineke/lsp-format.nvim"
 
@@ -41,9 +40,10 @@ return require('packer').startup(function()
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
 
-  use {
- 'nvim-telescope/telescope.nvim',
+  use {'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }}
+
+  use { "nvim-telescope/telescope-file-browser.nvim" }
 
   use {
         "hrsh7th/nvim-cmp",
