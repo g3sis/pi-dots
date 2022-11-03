@@ -13,6 +13,10 @@ return require('packer').startup(function()
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
 
+  use {'andweeb/presence.nvim'}
+
+  use {"ellisonleao/glow.nvim"}
+
   use 'stevearc/dressing.nvim'
 
   use "numToStr/Comment.nvim"
