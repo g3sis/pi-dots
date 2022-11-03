@@ -19,11 +19,15 @@ size = 20,
 open_mapping = [[<c-t>]],
 direction = "float"
 }
+--Beacon
+vim.cmd([[nnoremap <c-b> :Beacon<cr>]])
 
 require('glow').setup({
   style = "dark",
   width = 160,
 })
+
+require('numb').setup()
 
 require('Comment').setup()
 

@@ -13,6 +13,10 @@ return require('packer').startup(function()
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
 
+  use 'nacro90/numb.nvim'
+
+  use 'danilamihailov/beacon.nvim'
+
   use {'andweeb/presence.nvim'}
 
   use {"ellisonleao/glow.nvim"}
