@@ -11,13 +11,24 @@ return require('packer').startup(function()
   use {
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
-    }
+  }
+
+  use {'shaunsingh/oxocarbon.nvim', run = './install.sh'}
 
   use 'nacro90/numb.nvim'
 
-  use 'danilamihailov/beacon.nvim'
+  use 'rainbowhxch/beacon.nvim'
 
   use {'andweeb/presence.nvim'}
+
+  use {
+  'phaazon/mind.nvim',
+  branch = 'v2.2',
+  requires = { 'nvim-lua/plenary.nvim' },
+  config = function()
+    require'mind'.setup()
+  end
+  }
 
   use {"ellisonleao/glow.nvim"}
 

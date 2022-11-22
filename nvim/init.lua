@@ -1,5 +1,8 @@
 vim.cmd("set number")
 vim.cmd("set mouse=a")
+vim.opt.fillchars = { eob = " " }
+--vim.cmd.colorscheme "oxocarbon"
+
 require('plugins')
 --Start Page
 vim.cmd([[nnoremap <c-\> :Alpha<cr>]])
