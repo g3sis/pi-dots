@@ -1,7 +1,7 @@
 black       = '#000000';
 red         = '#fa4d56'; // red
 green       = '#24a148'; // green
-yellow      = '#044317'; // yellow
+yellow      = '#0043ce'; // yellow
 blue        = '#4589ff'; // blue
 magenta     = '#ff7eb6'; // magenta
 cyan        = '#1192e8'; // cyan
