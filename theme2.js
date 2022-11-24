@@ -3,7 +3,7 @@ red         = '#ee5396'; // red
 green       = '#42be65'; // green
 yellow      = '#9F9F8F'; // yellow
 blue        = '#33b1ff'; // blue
-lavender    = '#be95ff'; // lavender
+magenta    = '#be95ff'; // lavender
 cyan        = '#82cfff'; // cyan
 white       = '#ffffff'; // light gray
 lightBlack  = '#C2E8FF'; // medium gray
@@ -17,7 +17,7 @@ lightWhite  = '#E0E0E0'; // white
  
 t.prefs_.set('color-palette-overrides',
                  [ black , red     , green  , yellow,
-                  blue     , lavender , cyan   , white,
+                  blue     , magenta , cyan   , white,
                   lightBlack   , lightRed  , lightGreen , lightYellow,
                   lightBlue    , lightMagenta  , lightCyan  , lightWhite ]);
  
