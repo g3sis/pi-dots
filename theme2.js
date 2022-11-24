@@ -1,18 +1,18 @@
 black       = '#000000';
-red         = '#2d0709'; // red
-green       = '#071908'; // green
-yellow      = '#1c1500'; // yellow
-blue        = '#001141'; // blue
-magenta     = '#2a0a18'; // magenta
-cyan        = '#061727'; // cyan
+red         = '#fa4d56'; // red
+green       = '#24a148'; // green
+yellow      = '#d2a106'; // yellow
+blue        = '#4589ff'; // blue
+magenta     = '#ff7eb6'; // magenta
+cyan        = '#1192e8'; // cyan
 white       = '#ffffff'; // light gray
-lightBlack  = '#212121'; // medium gray
-lightRed    = '#ee0713'; // red
-lightGreen  = '#208e3f'; // green
-lightYellow = '#9e7700'; // yellow
-lightBlue   = '#1f70ff'; // blue
-lightMagenta= '#e3176f'; // pink
-lightCyan   = '#0f7ec8'; // cyan
+lightBlack  = '#393939'; // medium gray
+lightRed    = '#ff8389'; // red
+lightGreen  = '#42be65'; // green
+lightYellow = '#f1c21b'; // yellow
+lightBlue   = '#78a9ff'; // blue
+lightMagenta= '#ff7eb6'; // pink
+lightCyan   = '#33b1ff'; // cyan
 lightWhite  = '#E0E0E0'; // white
  
 t.prefs_.set('color-palette-overrides',
