@@ -17,7 +17,7 @@ lightWhite  = '#E0E0E0'; // white
  
 t.prefs_.set('color-palette-overrides',
                  [ black , red     , green  , yellow,
-                  blue     , magenta , cyan   , white,
+                  blue     , lavender , cyan   , white,
                   lightBlack   , lightRed  , lightGreen , lightYellow,
                   lightBlue    , lightMagenta  , lightCyan  , lightWhite ]);
  
