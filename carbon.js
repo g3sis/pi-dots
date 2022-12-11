@@ -1,5 +1,5 @@
-// Base16 {{scheme-name}}
-// Scheme: {{scheme-author}}
+// Base16 {{carbon}}
+// Scheme: {{g3sis}}
 
 base00 = '#161616';
 base01 = '#262626';
