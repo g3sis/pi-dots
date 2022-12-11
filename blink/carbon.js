@@ -20,7 +20,7 @@ base0F = '#82cfff';
 
 t.prefs_.set('color-palette-overrides', 
                         [base00,
-                        base08,
+                        base06,
                         base0B,
                         base0A,
                         base0D,
@@ -28,7 +28,7 @@ t.prefs_.set('color-palette-overrides',
                         base0C,
                         base05,
                         base03,
-                        base08,
+                        base06,
                         base0B,
                         base0A,
                         base0D,
@@ -40,7 +40,7 @@ t.prefs_.set('color-palette-overrides',
                         base01,
                         base02,
                         base04,
-                        base06]);
+                        base08]);
 
 t.prefs_.set('cursor-color', "rgba(242, 244, 248,0.5)");
 t.prefs_.set('foreground-color', base05);

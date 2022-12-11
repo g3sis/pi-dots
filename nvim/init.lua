@@ -22,6 +22,10 @@ size = 20,
 open_mapping = [[<c-t>]],
 direction = "float"
 }
+
+vim.opt.background = "dark" -- set this to dark or light
+--vim.cmd("colorscheme oxocarbon")
+
 --Beacon
 vim.cmd([[nnoremap <c-b> :Beacon<cr>]])
 
