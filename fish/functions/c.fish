@@ -1,5 +1,5 @@
 function c
 clear
 cd $argv
-exa -a
+exa -l 
 end

@@ -13,9 +13,9 @@ return require('packer').startup(function()
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
 
-  use {'nyoom-engineering/oxocarbon.nvim'}
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
-  use {'shaunsingh/oxocarbon.nvim', run = './install.sh'}
+  use {'nyoom-engineering/oxocarbon.nvim'}
 
   use 'nacro90/numb.nvim'
 
